@@ -1,0 +1,659 @@
+@font-face {
+    font-family: Abril-Fatface-Regular;
+    src: url("fonts/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoSlab-Medium;
+    src: url("fonts/RobotoSlab-Medium.ttf");
+}
+
+@font-face {
+    font-family: RobotoSlab-Light;
+    src: url("fonts/RobotoSlab-Light.ttf");
+}
+
+@font-face {
+    font-family: ArimaMadurai-Medium;
+    src: url("fonts/ArimaMadurai-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dce2e2;
+}
+
+.container {
+    min-width: 100%;
+}
+
+.navbar {
+    background-image: url("heading-backgroud.jpg");
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
+}
+
+.nav-item {
+    font-family: ArimaMadurai-Medium;
+}
+
+.blog-logo {
+    height: 400px;
+    width: 400px;
+}
+
+.blog-logo-mini {
+    height: 100px;
+    width: 100px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+#input-container {
+    position: relative;
+}
+
+#input-container input {
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    background-color: transparent;   
+    font-family: ArimaMadurai-Medium;
+}
+
+#input-container input::placeholder {
+    color: #f8f8f6;
+    font-size: 20px;
+}
+
+.search-section {
+    border-bottom: 2px solid #f8f8f6;
+}
+
+.search-button:focus {
+    box-shadow: none !important;
+}
+
+.search-button:hover {
+    animation: search-btn-hover 0.1s forwards;
+}
+
+@keyframes search-btn-hover {
+    from {
+        font-size: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    to {
+        font-size: 18px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+}
+
+.top-reading-header {
+    font-family: Abril-Fatface-Regular ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top-reading-effect-wrapper {
+    overflow: hidden;
+}
+
+.top-reading-content-responsive {
+    position: relative !important;
+    width: 100% !important;
+}
+
+.top1-reading {
+    position: relative;
+}
+
+.top1-reading-background {
+    background-image: url("woman-laying-on-couch-reading.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 93vh;
+    position: relative;
+}
+
+.top1-reading-responsive {
+    height: 46vh !important;
+}
+
+.top1-reading-background:hover {
+    animation: top-reading-hover-effect 0.3s ease-in forwards;
+}
+
+.top1-reading-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(250,251,251, 0.9);
+    height: 30%;
+    width: 75%;
+    border-top-right-radius: 10px;
+}
+
+.top1-reading-category-link {
+    font-family: RobotoSlab-Medium;
+    text-transform: uppercase;
+    color: #d7828e;
+}
+
+.top1-reading-category-link-responsive {
+    font-size: 12px !important;
+}
+
+.top1-reading-category-link:hover {
+    text-decoration: none;
+    color: #d7828e;
+}
+
+.top1-reading-author-link {
+    font-family: RobotoSlab-Medium;
+    color: #767676;
+}
+
+.top1-reading-author-link-responsive {
+    font-size: 13px !important;
+}
+
+.top1-reading-author-link:hover {
+    text-decoration: none;
+    color: #767676;
+}
+
+.top1-reading-headline-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #222222;
+}
+
+.top1-reading-headline-link-responsive {
+    font-size: 16px !important;
+}
+
+.top1-reading-headline-link:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+.top2-reading {
+    position: relative;
+}
+
+.top2-reading-background {
+    background-image: url("chest-fly-bb-arrington.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 46vh;
+}
+
+.top2-reading-background:hover {
+    animation: top-reading-hover-effect 0.3s ease-in forwards;
+}
+
+.top2-reading-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(250,251,251, 0.9);
+    height: 35%;
+    width: 75%;
+    border-top-right-radius: 10px;
+}
+
+.top2-reading-category-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ae70ae;
+}
+
+.top2-reading-category-link:hover {
+    text-decoration: none;
+    color: #ae70ae;
+}
+
+.top2-reading-author-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 13px;
+    color: #767676;
+}
+
+.top2-reading-author-link:hover {
+    text-decoration: none;
+    font-family: RobotoSlab-Medium;
+    color: #767676;
+}
+
+.top2-reading-headline-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.top2-reading-headline-link:hover {
+    text-decoration: none;
+    color: #222222;
+    font-family: RobotoSlab-Medium;
+}
+
+.top3-reading {
+    position: relative;
+}
+
+.top3-reading-background {
+    background-image: url("woman-on-the-beach.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 46vh;
+}
+
+.top3-reading-background:hover {
+    animation: top-reading-hover-effect 0.3s linear forwards;
+}
+
+.top3-reading-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(250,251,251, 0.9);
+    height: 35%;
+    width: 75%;
+    border-top-right-radius: 10px;
+}
+
+.top3-reading-category-link {
+    text-transform: uppercase;
+    font-family: RobotoSlab-Medium;
+    color: #5d8bd9;
+    font-size: 12px;
+}
+
+.top3-reading-category-link:hover {
+    text-decoration: none;
+    color: #5d8bd9;
+}
+
+.top3-reading-author-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 13px;
+    color: #767676;
+}
+
+.top3-reading-author-link:hover {
+    text-decoration: none;
+    font-family: RobotoSlab-Medium;
+    color: #767676;
+}
+
+.top3-reading-headline-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.top3-reading-headline-link:hover {
+    text-decoration: none;
+    color: #222222;
+    font-family: RobotoSlab-Medium;
+}
+
+@keyframes top-reading-hover-effect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.02);
+    }
+}
+
+.book-section-heading {
+    font-family: Abril-Fatface-Regular;
+}
+
+.book {
+    background-color: white;
+    width: 85%;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
+}
+
+.book:hover {
+    box-shadow: 0 4px 7px rgb(0 0 0 / 35%);
+    transition: all .3s ease-in-out;
+}
+
+.blog-category {
+    font-size: 16px;
+    font-family: RobotoSlab-Medium;
+}
+
+.book-category-link {
+    color: #6977c8;
+}
+
+.book-category-link:hover {
+    text-decoration: none;
+    color: #6977c8;
+}
+
+.book-title-link {
+    color: #222222;
+    text-transform: capitalize;
+    font-family: RobotoSlab-Medium;
+}
+
+.book-title-link:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+.book-author {
+    color: #767676;
+    font-family: RobotoSlab-Medium;
+}
+
+.book-author:hover {
+    text-decoration: none;
+    color: #767676;
+}
+
+.book-display-area {
+    background-color: #f4f4f4;
+}
+
+.book1-img {
+    background-image: url("murder-by-number.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.book2-img {
+    background-image: url("stepping-beyond-intention.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.book3-img {
+    background-image: url("verntronpa.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.book4-img {
+    background-image: url("sweet-love.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.book5-img {
+    background-image: url("a-thousand-letters.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.all-book-reviews-btn {
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 30px;
+    color: #383838;
+    width: fit-content;
+    border: 1px solid #c0c0c0;
+    font-family: RobotoSlab-Medium;
+    padding: 10px 26px 10px 26px;
+}
+
+.all-book-reviews-btn:hover {
+    cursor: pointer;
+    border-color: #4b4b4b;
+    transition: all 0.4s ease;
+}
+
+.blogs-section-heading {
+    font-family: Abril-Fatface-Regular;
+}
+
+.blog-item {
+    margin-bottom: 32px;
+}
+
+.blog-item-wrapper {
+    box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
+    border-radius: 5px;
+}
+
+.blog-item-wrapper:hover {
+    box-shadow: 0 4px 7px rgb(0 0 0 / 35%);
+    transition: all .3s ease-in-out;
+}
+
+.blog-information-area {
+    min-height: 24vh;
+}
+
+.blog-category-link {
+    text-transform: uppercase;
+}
+
+.blog-category-link:hover {
+    text-decoration: none;
+}
+
+.blog-food-category-link {
+    color: #226f61;
+}
+
+.blog-health-category-link {
+    color: #d7828e;
+}
+
+.blog-health-category-link:hover {
+    color: #d7828e;
+}
+
+.blog-travel-category-link {
+    color: #5d8bd9;
+}
+
+.blog-title-link {
+    color: #222222;
+    text-transform: capitalize;
+    font-family: RobotoSlab-Medium;
+    font-size: 22px;
+}
+
+.blog-title-link:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+.blog-author-link {
+    color: #767676;
+    font-family: RobotoSlab-Medium;
+}
+
+.blog-author-link:hover {
+    color: #767676;
+    text-decoration: none;
+}
+
+.blog-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38vh;
+    margin: 0 -8px 0 -8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.blog1-img {
+    background-image: url("coffee.jpg");
+}
+
+.blog2-img {
+    background-image: url("young-woman-sitting-on-a-park-bench-after-a-workout.jpg");
+}
+
+.blog3-img {
+    background-image: url("woman-sitting-in-window-reading-book.jpg");
+}
+
+.blog4-img {
+    background-image: url("IMG_9807Edit-1024x576.jpg");
+}
+
+.blog5-img {
+    background-image: url("Pai-Thailand.png");
+}
+
+.blog6-img {
+    background-image: url("Thuy-si.png");
+}
+
+.see-more-blogs-btn {
+    border-radius: 40px;
+    font-family: RobotoSlab-Medium;
+    font-size: 13px;
+    padding: 13px 34px 12px;
+    color: white;
+    background-color: #b54b09;
+    border-color: #b54b09;
+}
+
+.see-more-blogs-btn:hover {
+    text-decoration: none;
+    color: white;
+    transition: all .25s ease-in-out;
+    background-color: rgba(181,75,9,.8);
+    border-color: rgba(181,75,9,.8);
+}
+
+.latest-blog-item-wrapper {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
+}
+
+.latest-blog-information-area {
+    min-height: 28vh;
+}
+
+.latest-blog-title-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.latest-blog-title-link:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+.latest-blog-author-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 14px;
+    color: #767676;
+}
+
+.latest-blog-author-link:hover {
+    font-family: RobotoSlab-Medium;
+    color: #767676;
+    text-decoration: none;
+}
+
+.latest-blog-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38vh;
+    margin: 0 -8px 0 -8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.latest-blog1-img {
+    background-image: url("almond-butter-vs-peanut-butter.jpg");
+}
+
+.latest-blog2-img {
+    background-image: url("tomatoes.png");
+}
+
+.latest-blog3-img {
+    background-image: url("10-nguyen-tac-song-cua-dan-ong-tuoi-20-1-1.jpg");
+}
+
+.latest-blog4-img {
+    background-image: url("1_17626432_1387469917980235_8276771202755435774_n.jpg");
+}
+
+.latest-blog5-img {
+    background-image: url("1002912252-2048x1365.jpg");
+}
+
+.latest-blog6-img {
+    background-image: url("portrait-of-a-girl.jpg");
+}
+
+.blog-youth-category-link {
+    color: #55acee !important;
+}
+
+.blog-youth-category-link:hover {
+    color: #55acee !important;
+}
+
+.blog-sports-category-link {
+    color: #151515;
+}
+
+.blog-sports-category-link:hover {
+    color: #151515;
+}
+
+.blog-love-category-link {
+    color: #ec5569;
+}
+
+.blog-love-category-link:hover {
+    color: #ec5569;
+}
+
+.blog-footer {
+    background-color: #1e2022;
+    font-family: RobotoSlab-Light;
+    height: 8vh;
+    width: 100%;
+}
